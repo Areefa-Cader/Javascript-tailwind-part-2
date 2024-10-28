@@ -7,7 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-</body>
+<body class="w-full h-screen flex justify-center items-center" id="body">
+    <div class="container block bg-slate-200 px-10 py-6 border-2 shadow-lg w-11/12 md:w-3/6 lg:w-2/5 h-auto flex-row justify-center items-center rounded-lg" id="container">
+        <div class="top flex justify-center items-center gap-x-20 ">
+            <span class="user-result text-blue-900 text-center">
+                <i class="fa-regular fa-hand-back-fist text-8xl text-blue-900 rotate-90" id="userImg" ></i>
+                <p class="mt-2" >User</p>
+            </span>
+            <span class="computer-result text-blue-900 text-center">
+            <i class="fa-regular fa-hand text-8xl text-blue-900 -rotate-90 " id="computerImg" ></i>
+            <p class="mt-2">CPU User</p>
+        </span>
+        </div>
+        <div class="status text-center text-3xl font-semibold font-s my-8">
+            <p id="textResult"></p>
+        </div>
+        <div class="optionImages flex justify-center items-center gap-x-14 text-blue-900 ">
+            <span class="optionImg text-center cursor-pointer opacity-50 hover:opacity-100">
+                <i class="fa-regular fa-hand-back-fist text-5xl text-blue-900" id="rockImg" ></i>
+                <p>Rock</p>
+            </span>
+            <span class="optionImg text-center  cursor-pointer opacity-50 hover:opacity-100">
+                <i class="fa-regular fa-hand text-5xl text-blue-900" id="paperImg" ></i>
+                <p>Paper</p>
+            </span>
+            <span class="optionImg text-center  cursor-pointer opacity-50 hover:opacity-100">
+                <i class="fa-regular fa-hand-scissors text-5xl text-blue-900" id="scissorImg" ></i>
+                <p>Scissor</p>
+            </span>
+        </div>
+    </div>
+ <script src="script.js"></script>   
+</body> 
 </html>
+<!-- 
+<i class="fa-regular fa-hand-back-fist"></i>
+<i class="fa-regular fa-hand"></i>
+<i class="fa-regular fa-hand-scissors"></i> -->
