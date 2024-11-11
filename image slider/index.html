@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+</head>
+<body class="min-h-screen flex justify-center items-center bg-[#264A5F]">
+    <div class="wrapper relative bg-white flex justify-center items-center gap-2 max-w-[540px] w-full h-[360px] py-3 rounded-xl shadow-[0_6px_5px_5px_rgba(255,255,255,0.3)]">
+        <i class="fa-solid fa-circle-chevron-left btn-left absolute text-3xl left-6 top-1/2 cursor-pointer transform -translate-y-1/2 transition-all active:scale-95"></i>
+        <div class="image-container max-w-[410px] w-full h-auto">
+           <div class="images w-full h-full object-fill flex gap-4 overflow-hidden">
+             <img src="images/pic1.jpeg" class="rounded-lg">
+             <img src="images/pic2.jpg" class="rounded-lg">
+             <img src="images/pic3.jpg" class="rounded-lg">
+             <img src="images/pic4.jpg" class="rounded-lg">
+             <img src="images/pic5.jpg" class="rounded-lg">
+           </div> 
+        </div>
+        <i class="fa-solid fa-circle-chevron-right btn-right absolute text-3xl right-6 top-1/2 cursor-pointer transform -translate-y-1/2 transition-all active:scale-95"></i>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

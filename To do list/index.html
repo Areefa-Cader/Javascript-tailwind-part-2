@@ -19,41 +19,22 @@
     </style>
 </head>
 <body class=" bg-[#FBCED3]">
-    <!-- <div class="container max-w-[480px] w-[90%] md:w-full lg:w-full p-6 bg-white rounded-lg gap-3 shadow-2xl">
-        <div class="input-field w-full flex justify-center items-center border-2 border-gray-200 rounded-lg">
-           <input type="text" name="" id="" placeholder="Enter you new task" class="input-task outline-0 border-0 m-4 w-full">
-            <i class="fa-regular fa-file-lines text-xl mr-4"></i>
-        </div>
-
-        <ul class="todolist mt-4">
-            <li class="list w-full rounded-lg bg-slate-200 p-4">
-                <input type="checkbox" name="" id="checkBox" class="ml-2">
-                <span id="task">Finish the homwwork</span>
-                <i class="fa-solid fa-trash-can ml-[50%] cursor-pointer hover:text-[#AB7B8E]"></i>
-            </li>
-
-        </ul>
-        <div class="pending-task flex justify-between items-center mt-4">
-            <span class="font-semibold">You have <span class="pending-number">No</span> tasks pending</span>
-            <button class="border-0 outline-0 py-2 px-4 rounded-lg bg-[#AB7B8E] text-white cursor-pointer hover:shadow-[0_5px_5px_rgba(171,123,142,0.6)]">Clear All</button>
-        </div>
-    </div> -->
     <div class="container relative max-w-[480px] w-full bg-white shadow-[0_5px_10px_rgba(0,0,0,0.2)] rounded-lg p-6 m-[85px_auto_0] ">
     <div class="input-field relative h-[64px] w-full">
         <textarea name="" id="" placeholder="Enter your note" class="h-full w-full outline-none rounded-lg p-[18px_45px_15px_15px] text-xl font-semibold border-2 border-gray-200 resize-none focus:border-[##AB7B8E]"></textarea>
         <i class="fa-regular fa-file-lines absolute top-1/2 right-[15px] transform translate-y-[-50%] pointer-events-none text-3xl text-gray-500 focus:text-[##AB7B8E]"></i>
     </div>
 
-    <div class="toDoList mt-5">
-        <div class="list flex items-center bg-slate-200 p-[20px_15px] rounded-lg relative cursor-pointer mt-2">
+    <ul class="toDoList max-h-[380px] overflow-y-auto pr-3">
+        <!-- <li class="list flex items-center bg-slate-200 p-[20px_15px] rounded-lg relative cursor-pointer mt-2">
            <input type="checkbox" name="" id="" class="h-4 min-w-4 "> 
            <span class="task m-[0_30px_0_15px] break-words">Finish homework</span>
            <i class="fa-solid fa-trash-can hidden absolute top-1/2 right-[15px] transform translate-y-[-50%] text-2xl text-gray-500 focus:text-[##AB7B8E] p-1 hover:opacity-100"></i>
-        </div>
-    </div> 
+        </li> -->
+    </ul> 
     <div class="pending-task flex items-center justify-between mt-6">
-      <span class="">You have <span>No</span> task pendings</span> 
-      <button class="clear-button py-1.5 px-3 border-none outline-none rounded-lg bg-[#AB7B8E] text-white text-lg hover:shadow-[0_5px_5px_rgba(171,123,142,0.6)]">
+      <span class="">You have <span class="pending-num">No</span> task pendings</span> 
+      <button class="clear-button py-1.5 px-3 border-none outline-none rounded-lg bg-[#AB7B8E] pointer-events-none text-white cursor-pointer text-lg hover:shadow-[0_5px_5px_rgba(171,123,142,0.6)]">
         Clear All
       </button> 
     </div>
