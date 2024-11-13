@@ -66,4 +66,88 @@
 // check_palidrome('Hello');
 
 
+//all the combination of the word 'dog'
+
+// function text(str){
+//     var result =[];
+
+//     function searchComb(start, curr){
+//         if(curr.length > 0){
+//             result.push(curr);
+//         }
+
+//         for (let i = start ; i < str.length ; i++){
+//             searchComb(i+ 1, curr + str[i]);
+//         }
+//     }
+
+//     searchComb(0, '');
+
+//     return result;
+// }
+
+// const str = 'dog';
+
+// const result = text(str);
+
+// console.log(result);
+
+
+//order the word according to the alphabatic order
+
+// function alphabatic_order(str){
+//     var toLowerCase = str.toLowerCase();
+//     return toLowerCase.split('').sort().join('');
+// }
+
+// console.log(alphabatic_order('Webmaster'));
+
+//First letter of each word is in uppercase
+
+// function upperCase(str){
+//     var array1 = str.split(' ');
+//      console.log(array1);
+      
+
+//     var newArray = [];
+
+//     for(var x = 0 ; x < array1.length; x++){
+//         console.log(array1[x]);
+//         newArray.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
+//     }
+
+//     return newArray.join(' ');
+// }
+
+// console.log(upperCase('the quick brown box'));
+
+//find the longest word from the sentence
+
+function longest_word(str){
+     var array = str.split(' ');
+     console.log(array);
+     console.log(array.length);
+
+     var result = array[0];
+     console.log(array[0]);
+     console.log(result.length);
+     
+     
+    
+     for(var i = 1 ; i < array.length; i++){
+        
+        if(result.length < array[i].length){
+            
+            result = array[i];
+           
+        }
+     }
+
+     return result;
+}
+
+console.log(longest_word('Web development tutorial'));
+
+
+
 
